@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+    <style>
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            font-size: larger;
+            text-align: center;
+        }
+        p {
+            background-color: rgb(153, 255, 0);
+        }
+    </style>
+</head>
+
+<body style="background-color: #ffffff">
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About US</a>
+        <a href="contact.html">Contact US</a>
+        <a href="services.html"> Our Services</a>
+        <a href="#form">Form</a>
+        <a href="#country">country</a>
+    </nav>
+    <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: larger;">This is the highest header</h1>
+    <h2>This is the highest header</h2>
+    <h3>This is the highest header</h3>
+    <h4>This is the highest header</h4>
+    <h5>This is the highest header</h5>
+    <h6>This is the highest header</h6>
+    <hr>
+    <br>
+    <p><strong><i>This is a paragraph</i></strong></p>
+    <hr><br>
+    <h2>List of fruit</h2>
+    <ol type="A">
+        <li>Oranges</li>
+        <li>Mango</li>
+        <li>Apple</li>
+    </ol>
+    <hr><br>
+    <h3>List of names</h3>
+<ul>
+    <li>Bally</li>
+    <li>Dalu</li>
+    <li>Nd</li>
+</ul>
+<img src="bb.jpg" alt="pic">
+<table border="3" width="70%">
+    <tr>
+        <th>S/n</th>
+        <th>Name</th>
+        <th>Phone</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Chimdalu</td>
+        <td>08105081178</td>
+    </tr>
+    <tr> 
+<td>2</td>
+<td>Chidera</td>
+<td>08085582552</td>
+    </tr>
+</table>Z
+<hr><br>
+<form action="" id="form">
+    <label for="name">Name:</label>
+  <input type="text" id="name" placeholder="Enter your name" required minlength="3" maxlength="20"> 
+  <br><br>
+    <label for="email">Email:</label>
+  <input type="text" id="email" placeholder="Enter your email"> 
+  <br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" placeholder="Enter your password"> 
+    <br><br>
+    <label for="age">Age:</label>
+    <input type="number" id="age" min="18" max="100" required step="2">
+  <br><br>
+ <label> family: <input type="text" value="family"readonly disabled> </label>  
+ <br><br>
+ <label for="search">Search:</label>
+ <input type="search" name="search" id="search" min="3" max="20">
+ <br><br>
+ <label for="state of origin">State of origin:</label>
+ <input type="text" name="state of origin" id="abia" value="Abia" readonly disabled>
+ <br><br>
+ <label for="cities">Cities:</label>
+ <input type="text" list="cities">
+<datalist id="cities">
+    <option value="Lagos"></option>
+    <option value="Abuja"></option>
+    <option value="Ph"></option>
+    <option value="Anambra"></option>
+    <option value="Imo"></option>
+</datalist>
+  <br><br>
+<label for="country">Country:</label>
+<select name="country" id="country">
+    <option value="ghana">Ghana</option>
+    <option value="togo">Togo</option>
+    <option value="nigeria">Nigeria</option>
+    <option value="mali">Mali</option>
+    <option value="congo">Congo</option>
+    <option value="chad">Chad</option>
+    <option value="main option" selected disabled>select a country</option>
+</select>
+<br><br>
+<label for="tellus">Tell us about yourself</label>
+<textarea name="" id="tellus" cols="30" rows="10"></textarea>
+<br><br>
+<h2>Gender</h2>
+<label for="male">Male</label>
+<input type="radio" name="gender" id="male">
+<label for="female">Female</label>
+<input type="radio" name="gender" id="female">
+<!-- 
+    this training is for proficiency in website development
+-->
+<br><br>
+<H2>Hobbies</H2>
+<input type="checkbox" name="Hobbies" id="Swimming">
+<label for="swimming">Swimming</label>
+<input type="checkbox" name="Hobbies" id="travelling">
+<label for="travel">Travelling</label>
+<input type="checkbox" name="Hobbies" id="reading">
+<label for="reading">Reading</label>
+</form>
+
+
+
+</body>
+
+</html>
