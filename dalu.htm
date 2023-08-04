@@ -5,107 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<h1>Form</h1>
 <body>
-    <h1>The header</h1>
-    <h2>The header</h2>
-    <h3>The header</h3>
-    <h4>The header</h4>
-    <hr><br>
-    <p><strong><i>This is a paragraph</i></strong></p>
-    <hr><br>
-    <h2>Names of countries</h2>
-    <ol>
-        <li>Canada</li>
-        <li>China</li>
-        <li>England</li>
-        <li>Brazil</li>
-        <li>Nigeria</li>
-    </ol>
-    <hr><br>
-    <ul>
-    <h3>Names of continent</h3>
-        <li>North America</li>
-        <li>Asia</li>
-        <li>Europe</li>
-        <li>South America</li>
-        <li>Africa</li>
-    </ul>
-    <img src="bb.jpg" alt="pic">
-    <table border="3" width="70%">
-        <tr>
-            <th>S/n</th>
-            <th>Name</th>
-            <th>Phone No</th>
-            <th>Relation</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>Chidera</td>
-            <td>08085582552</td>
-            <td>Sister</td>
-        </tr>
-<tr>
-<td>2</td>
-<td>Somto</td>
-<td>08167548892</td>
-<td>Brother</td>
-</tr>
-<tr>
-<td>3</td>
-<td>Ijeoma</td>
-<td>07066554398</td>
-<td>Sister</td>
-</tr>
-    </table>
-    <hr><br>
-    <form action="">
-        <label for="name">Name</label>
-        <input type="text" id="name" placeholder="Enter your Country">
-<br><br>
-<label for="email">Email</label>
-<input type="text"  id="email" placeholder="Enter your email">
-<br><br>
-<label for="password">Password</label>
-<input type="text" id="password" placeholder="Enter your password">
-<br><br>
-<label for="country">Country</label>
-<select name="country" id="Country">
-    <option value="Nigeria">Nigeria</option>
-    <option value="Togo">Togo</option>
-    <option value="Cameroon">Cameroon</option>
-    <option value="Niger">Niger</option>
-    <option value="Kenya">Kenya</option>
-    <option value="Uganda">Uganda</option>
-    <option value="Chad">Chad</option>
-    <option value="Mali">Mali</option>
-    <option value="Morocco">Morocco</option>
-    <option value="Main option"selected disabled> Select your Country</option>
+    <form>
+    <label for="name">Name:</label>
+  <input type="text" id="name" placeholder="Enter your name" required minlength="3" maxlength="20"> 
+  <br><br>
+    <label for="email">Email:</label>
+  <input type="text" id="email" placeholder="Enter your email"> 
+  <br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" placeholder="Enter your password"> 
     <br><br>
-    </select>
-    <br><br>
-    <label for="comment">Comment</label>
-    <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+    <label for="age">Age:</label>
+    <input type="number" id="age" min="18" max="100" required step="2">
+  <br><br>
+ <label> family: <input type="text" value="family"readonly disabled> </label>  
+ <br><br>
+ <label for="search">Search:</label>
+ <input type="search" name="search" id="search" min="3" max="20">
+ <br><br>
+ <label for="state of origin">State of origin:</label>
+ <input type="text" name="state of origin" id="abia" value="Abia" readonly disabled>
+ <br><br>
+ <label for="cities">Cities:</label>
+ <input type="text" list="cities">
+<datalist id="cities">
+    <option value="Lagos"></option>
+    <option value="Abuja"></option>
+    <option value="Ph"></option>
+    <option value="Anambra"></option>
+    <option value="Imo"></option>
+</datalist>
+  <br><br>
+<label for="country">Country:</label>
+<select name="country" id="country">
+    <option value="ghana">Ghana</option>
+    <option value="togo">Togo</option>
+    <option value="nigeria">Nigeria</option>
+    <option value="mali">Mali</option>
+    <option value="congo">Congo</option>
+    <option value="chad">Chad</option>
+    <option value="main option" selected disabled>select a country</option>
+</select>
+<br><br>
+<label for="tellus">Tell us about yourself</label>
+<textarea name="" id="tellus" cols="30" rows="10"></textarea>
+<br><br>
 <h2>Gender</h2>
 <label for="male">Male</label>
 <input type="radio" name="gender" id="male">
 <label for="female">Female</label>
 <input type="radio" name="gender" id="female">
- <!-----At this stage one has learnt the necessary basics in html,the use of tags and attributes--->
- <br><br>
- <h2>Hobbies</h2>
- <label for="travelling">Traveling</label>
-<input type="checkbox" name="hobbies" id="travelling">
-<label for="reading">Reading</label>
-<input type="checkbox" name="hobbies" id="reading">
+<!-- 
+    this training is for proficiency in website development
+-->
+<br><br>
+<H2>Hobbies</H2>
+<input type="checkbox" name="Hobbies" id="Swimming">
 <label for="swimming">Swimming</label>
-<input type="checkbox" name="hobbies" id="swimming"> 
-<label for="boxing">Boxing</label>
-<input type="checkbox" name="hobbies" id="boxing"> 
-<label for="diving">Diving</label>
-<input type="checkbox" name="hobbies" id="diving">
+<input type="checkbox" name="Hobbies" id="travelling">
+<label for="travel">Travelling</label>
+<input type="checkbox" name="Hobbies" id="reading">
+<label for="reading">Reading</label>
+</form>
 
-    </form>
-    
     
         
 </body>
